@@ -1,0 +1,229 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+admin.py	../blog/admin.py	1;"	kind:file	line:1
+apps.py	../blog/apps.py	1;"	kind:file	line:1
+BlogConfig	../blog/apps.py	/^class BlogConfig(AppConfig):$/;"	kind:class	line:4
+name	../blog/apps.py	/^    name = 'blog'$/;"	kind:variable	line:5
+forms.py	../blog/forms.py	1;"	kind:file	line:1
+PostUpdateForm	../blog/forms.py	/^class PostUpdateForm(forms.ModelForm):$/;"	kind:class	line:4
+Meta	../blog/forms.py	/^    class Meta:$/;"	kind:class	line:5
+model	../blog/forms.py	/^        model = Post$/;"	kind:variable	line:6
+fields	../blog/forms.py	/^        fields = ['image', 'Captions']/;"	kind:variable	line:7
+0001_initial.py	../blog/migrations/0001_initial.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+initial	../blog/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
+dependencies	../blog/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:13
+operations	../blog/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:17
+name	../blog/migrations/0001_initial.py	/^            name='Post',$/;"	kind:variable	line:19
+fields	../blog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:20
+0002_remove_post_post_pic.py	../blog/migrations/0002_remove_post_post_pic.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0002_remove_post_post_pic.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+dependencies	../blog/migrations/0002_remove_post_post_pic.py	/^    dependencies = [$/;"	kind:variable	line:8
+operations	../blog/migrations/0002_remove_post_post_pic.py	/^    operations = [$/;"	kind:variable	line:12
+model_name	../blog/migrations/0002_remove_post_post_pic.py	/^            model_name='post',$/;"	kind:variable	line:14
+name	../blog/migrations/0002_remove_post_post_pic.py	/^            name='post_pic',$/;"	kind:variable	line:15
+0003_post_image.py	../blog/migrations/0003_post_image.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0003_post_image.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+dependencies	../blog/migrations/0003_post_image.py	/^    dependencies = [$/;"	kind:variable	line:8
+operations	../blog/migrations/0003_post_image.py	/^    operations = [$/;"	kind:variable	line:12
+model_name	../blog/migrations/0003_post_image.py	/^            model_name='post',$/;"	kind:variable	line:14
+name	../blog/migrations/0003_post_image.py	/^            name='image',$/;"	kind:variable	line:15
+field	../blog/migrations/0003_post_image.py	/^            field=models.ImageField(default='default.jpg', upload_to=''),$/;"	kind:variable	line:16
+0004_auto_20190725_1445.py	../blog/migrations/0004_auto_20190725_1445.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0004_auto_20190725_1445.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+dependencies	../blog/migrations/0004_auto_20190725_1445.py	/^    dependencies = [$/;"	kind:variable	line:8
+operations	../blog/migrations/0004_auto_20190725_1445.py	/^    operations = [$/;"	kind:variable	line:12
+model_name	../blog/migrations/0004_auto_20190725_1445.py	/^            model_name='post',$/;"	kind:variable	line:14
+name	../blog/migrations/0004_auto_20190725_1445.py	/^            name='image',$/;"	kind:variable	line:15
+field	../blog/migrations/0004_auto_20190725_1445.py	/^            field=models.ImageField(default='default\/default.jpg', upload_to=''),$/;"	kind:variable	line:16
+0005_auto_20190725_1448.py	../blog/migrations/0005_auto_20190725_1448.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0005_auto_20190725_1448.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+dependencies	../blog/migrations/0005_auto_20190725_1448.py	/^    dependencies = [$/;"	kind:variable	line:8
+operations	../blog/migrations/0005_auto_20190725_1448.py	/^    operations = [$/;"	kind:variable	line:12
+model_name	../blog/migrations/0005_auto_20190725_1448.py	/^            model_name='post',$/;"	kind:variable	line:14
+name	../blog/migrations/0005_auto_20190725_1448.py	/^            name='image',$/;"	kind:variable	line:15
+field	../blog/migrations/0005_auto_20190725_1448.py	/^            field=models.ImageField(default='default.jpg', height_field=500, upload_to='post_pictures', width_field=500),$/;"	kind:variable	line:16
+0006_auto_20190725_1450.py	../blog/migrations/0006_auto_20190725_1450.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0006_auto_20190725_1450.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+dependencies	../blog/migrations/0006_auto_20190725_1450.py	/^    dependencies = [$/;"	kind:variable	line:8
+operations	../blog/migrations/0006_auto_20190725_1450.py	/^    operations = [$/;"	kind:variable	line:12
+model_name	../blog/migrations/0006_auto_20190725_1450.py	/^            model_name='post',$/;"	kind:variable	line:14
+name	../blog/migrations/0006_auto_20190725_1450.py	/^            name='image',$/;"	kind:variable	line:15
+field	../blog/migrations/0006_auto_20190725_1450.py	/^            field=models.ImageField(default='default.jpg', upload_to='post_pictures'),$/;"	kind:variable	line:16
+0007_auto_20190725_1610.py	../blog/migrations/0007_auto_20190725_1610.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0007_auto_20190725_1610.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+dependencies	../blog/migrations/0007_auto_20190725_1610.py	/^    dependencies = [$/;"	kind:variable	line:8
+operations	../blog/migrations/0007_auto_20190725_1610.py	/^    operations = [$/;"	kind:variable	line:12
+model_name	../blog/migrations/0007_auto_20190725_1610.py	/^            model_name='post',$/;"	kind:variable	line:14
+name	../blog/migrations/0007_auto_20190725_1610.py	/^            name='image',$/;"	kind:variable	line:15
+field	../blog/migrations/0007_auto_20190725_1610.py	/^            field=models.ImageField(upload_to=''),$/;"	kind:variable	line:16
+0008_auto_20190725_1616.py	../blog/migrations/0008_auto_20190725_1616.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0008_auto_20190725_1616.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+dependencies	../blog/migrations/0008_auto_20190725_1616.py	/^    dependencies = [$/;"	kind:variable	line:8
+operations	../blog/migrations/0008_auto_20190725_1616.py	/^    operations = [$/;"	kind:variable	line:12
+model_name	../blog/migrations/0008_auto_20190725_1616.py	/^            model_name='post',$/;"	kind:variable	line:14
+name	../blog/migrations/0008_auto_20190725_1616.py	/^            name='image',$/;"	kind:variable	line:15
+field	../blog/migrations/0008_auto_20190725_1616.py	/^            field=models.FileField(upload_to=''),$/;"	kind:variable	line:16
+0009_auto_20190725_1634.py	../blog/migrations/0009_auto_20190725_1634.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0009_auto_20190725_1634.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+dependencies	../blog/migrations/0009_auto_20190725_1634.py	/^    dependencies = [$/;"	kind:variable	line:8
+operations	../blog/migrations/0009_auto_20190725_1634.py	/^    operations = [$/;"	kind:variable	line:12
+model_name	../blog/migrations/0009_auto_20190725_1634.py	/^            model_name='post',$/;"	kind:variable	line:14
+name	../blog/migrations/0009_auto_20190725_1634.py	/^            name='image',$/;"	kind:variable	line:15
+field	../blog/migrations/0009_auto_20190725_1634.py	/^            field=models.ImageField(upload_to=''),$/;"	kind:variable	line:16
+0010_auto_20190725_1733.py	../blog/migrations/0010_auto_20190725_1733.py	1;"	kind:file	line:1
+Migration	../blog/migrations/0010_auto_20190725_1733.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:6
+dependencies	../blog/migrations/0010_auto_20190725_1733.py	/^    dependencies = [$/;"	kind:variable	line:8
+operations	../blog/migrations/0010_auto_20190725_1733.py	/^    operations = [$/;"	kind:variable	line:12
+model_name	../blog/migrations/0010_auto_20190725_1733.py	/^            model_name='post',$/;"	kind:variable	line:14
+name	../blog/migrations/0010_auto_20190725_1733.py	/^            name='Comment',$/;"	kind:variable	line:15
+field	../blog/migrations/0010_auto_20190725_1733.py	/^            field=models.TextField(blank=True),$/;"	kind:variable	line:16
+model_name	../blog/migrations/0010_auto_20190725_1733.py	/^            model_name='post',$/;"	kind:variable	line:19
+name	../blog/migrations/0010_auto_20190725_1733.py	/^            name='image',$/;"	kind:variable	line:20
+field	../blog/migrations/0010_auto_20190725_1733.py	/^            field=models.ImageField(default='default.jpg', upload_to=''),$/;"	kind:variable	line:21
+__init__.py	../blog/migrations/__init__.py	1;"	kind:file	line:1
+models.py	../blog/models.py	1;"	kind:file	line:1
+Post	../blog/models.py	/^class Post(models.Model):$/;"	kind:class	line:7
+Captions	../blog/models.py	/^    Captions = models.CharField(max_length=100)$/;"	kind:variable	line:9
+image	../blog/models.py	/^    image = models.ImageField(default='default.jpg')$/;"	kind:variable	line:10
+Comment	../blog/models.py	/^    Comment = models.TextField(blank= True)$/;"	kind:variable	line:11
+date_posted	../blog/models.py	/^    date_posted = models.DateTimeField(default= timezone.now)$/;"	kind:variable	line:12
+author	../blog/models.py	/^    author = models.ForeignKey(User, on_delete=models.CASCADE)$/;"	kind:variable	line:13
+__str__	../blog/models.py	/^    def __str__(self):$/;"	kind:member	line:15
+get_absolute_url	../blog/models.py	/^    def get_absolute_url(self):$/;"	kind:member	line:19
+tests.py	../blog/tests.py	1;"	kind:file	line:1
+urls.py	../blog/urls.py	1;"	kind:file	line:1
+urlpatterns	../blog/urls.py	/^urlpatterns = [$/;"	kind:variable	line:16
+views.py	../blog/views.py	1;"	kind:file	line:1
+home	../blog/views.py	/^def home(request):$/;"	kind:function	line:22
+about	../blog/views.py	/^def about(request):$/;"	kind:function	line:30
+PostListView	../blog/views.py	/^class PostListView(ListView):$/;"	kind:class	line:33
+model	../blog/views.py	/^   model = Post$/;"	kind:variable	line:34
+context_object_name	../blog/views.py	/^   context_object_name = 'posts'$/;"	kind:variable	line:35
+ordering	../blog/views.py	/^   ordering = ['-date_posted']$/;"	kind:variable	line:36
+paginated_by	../blog/views.py	/^   paginated_by = 2$/;"	kind:variable	line:37
+PostDetailView	../blog/views.py	/^class PostDetailView(DetailView):$/;"	kind:class	line:40
+model	../blog/views.py	/^   model = Post$/;"	kind:variable	line:41
+CreateNewView	../blog/views.py	/^class CreateNewView(LoginRequiredMixin, CreateView):$/;"	kind:class	line:44
+model	../blog/views.py	/^   model = Post$/;"	kind:variable	line:45
+fields	../blog/views.py	/^   fields = ['image','Captions']$/;"	kind:variable	line:46
+form_valid	../blog/views.py	/^   def form_valid(self, form):$/;"	kind:member	line:48
+UserPostListView	../blog/views.py	/^class UserPostListView(LoginRequiredMixin, ListView):$/;"	kind:class	line:53
+model	../blog/views.py	/^      model = Post$/;"	kind:variable	line:54
+context_object_name	../blog/views.py	/^      context_object_name = 'posts'$/;"	kind:variable	line:55
+ordering	../blog/views.py	/^      ordering = ['-date_posted']$/;"	kind:variable	line:56
+template_name	../blog/views.py	/^      template_name = 'blog\/home.html'$/;"	kind:variable	line:57
+paginated_by	../blog/views.py	/^      paginated_by = 2$/;"	kind:variable	line:58
+get_queryset	../blog/views.py	/^      def get_queryset(self):     #checks the query request is currect or not (override)$/;"	kind:member	line:60
+PostUpdateView	../blog/views.py	/^class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):$/;"	kind:class	line:65
+model	../blog/views.py	/^    model = Post$/;"	kind:variable	line:67
+fields	../blog/views.py	/^    fields = ['Captions', 'image' ]$/;"	kind:variable	line:68
+form_valid	../blog/views.py	/^    def form_valid(self, form): #used when we have to valid the user that is requesting the $/;"	kind:member	line:70
+test_func	../blog/views.py	/^    def test_func(self):#tests the user about the user updating the form is that user who is requesting and author the requested post$/;"	kind:member	line:75
+PostDeleteView	../blog/views.py	/^class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView): $/;"	kind:class	line:82
+model	../blog/views.py	/^    model = Post$/;"	kind:variable	line:83
+success_url	../blog/views.py	/^    success_url = '\/'$/;"	kind:variable	line:84
+test_func	../blog/views.py	/^    def test_func(self):$/;"	kind:member	line:86
+UpdatePost	../blog/views.py	/^def UpdatePost(request):$/;"	kind:function	line:96
+__init__.py	../blog/__init__.py	1;"	kind:file	line:1
+admin.py	../chat/admin.py	1;"	kind:file	line:1
+apps.py	../chat/apps.py	1;"	kind:file	line:1
+ChatConfig	../chat/apps.py	/^class ChatConfig(AppConfig):$/;"	kind:class	line:4
+name	../chat/apps.py	/^    name = 'chat'$/;"	kind:variable	line:5
+consumers.py	../chat/consumers.py	1;"	kind:file	line:1
+ChatConsumer	../chat/consumers.py	/^class ChatConsumer(WebsocketConsumer):$/;"	kind:class	line:4
+connect	../chat/consumers.py	/^    def connect(self):$/;"	kind:member	line:5
+disconnect	../chat/consumers.py	/^    def disconnect(self, close_code):$/;"	kind:member	line:8
+receive	../chat/consumers.py	/^    def receive(self, text_data):$/;"	kind:member	line:11
+__init__.py	../chat/migrations/__init__.py	1;"	kind:file	line:1
+models.py	../chat/models.py	1;"	kind:file	line:1
+routing.py	../chat/routing.py	1;"	kind:file	line:1
+websocket_urlpatterns	../chat/routing.py	/^websocket_urlpatterns = [$/;"	kind:variable	line:5
+tests.py	../chat/tests.py	1;"	kind:file	line:1
+urls.py	../chat/urls.py	1;"	kind:file	line:1
+urlpatterns	../chat/urls.py	/^urlpatterns = [$/;"	kind:variable	line:5
+views.py	../chat/views.py	1;"	kind:file	line:1
+index	../chat/views.py	/^def index(request):$/;"	kind:function	line:6
+room	../chat/views.py	/^def room(request, room_name):$/;"	kind:function	line:9
+__init__.py	../chat/__init__.py	1;"	kind:file	line:1
+manage.py	../manage.py	1;"	kind:file	line:1
+main	../manage.py	/^def main():$/;"	kind:function	line:7
+routing.py	../MyBlogDjango/routing.py	1;"	kind:file	line:1
+application	../MyBlogDjango/routing.py	/^application = ProtocolTypeRouter({$/;"	kind:variable	line:5
+settings.py	../MyBlogDjango/settings.py	1;"	kind:file	line:1
+BASE_DIR	../MyBlogDjango/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+SECRET_KEY	../MyBlogDjango/settings.py	/^SECRET_KEY = 'o)cl4&j&wlquozb(h)ts9mc0&(t2#*0yf4-d9%i*&5r_$6$h=#'$/;"	kind:variable	line:23
+DEBUG	../MyBlogDjango/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+ALLOWED_HOSTS	../MyBlogDjango/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+INSTALLED_APPS	../MyBlogDjango/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+MIDDLEWARE	../MyBlogDjango/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:47
+ROOT_URLCONF	../MyBlogDjango/settings.py	/^ROOT_URLCONF = 'MyBlogDjango.urls'$/;"	kind:variable	line:57
+TEMPLATES	../MyBlogDjango/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:59
+WSGI_APPLICATION	../MyBlogDjango/settings.py	/^WSGI_APPLICATION = 'MyBlogDjango.wsgi.application'$/;"	kind:variable	line:75
+ASGI_APPLICATION	../MyBlogDjango/settings.py	/^ASGI_APPLICATION = 'MyBlogDjango.routing.application'$/;"	kind:variable	line:76
+CHANNEL_LAYERS	../MyBlogDjango/settings.py	/^CHANNEL_LAYERS = {$/;"	kind:variable	line:77
+DATABASES	../MyBlogDjango/settings.py	/^DATABASES = {$/;"	kind:variable	line:89
+AUTH_PASSWORD_VALIDATORS	../MyBlogDjango/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:100
+LANGUAGE_CODE	../MyBlogDjango/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:119
+TIME_ZONE	../MyBlogDjango/settings.py	/^TIME_ZONE = 'Asia\/Kolkata'$/;"	kind:variable	line:121
+USE_I18N	../MyBlogDjango/settings.py	/^USE_I18N = True$/;"	kind:variable	line:123
+USE_L10N	../MyBlogDjango/settings.py	/^USE_L10N = True$/;"	kind:variable	line:125
+USE_TZ	../MyBlogDjango/settings.py	/^USE_TZ = True$/;"	kind:variable	line:127
+STATIC_URL	../MyBlogDjango/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:133
+MEDIA_ROOT	../MyBlogDjango/settings.py	/^MEDIA_ROOT= os.path.join(BASE_DIR, "media")$/;"	kind:variable	line:135
+MEDIA_URL	../MyBlogDjango/settings.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:136
+CRISPY_TEMPLATE_PACK	../MyBlogDjango/settings.py	/^CRISPY_TEMPLATE_PACK = 'bootstrap4'$/;"	kind:variable	line:138
+LOGIN_REDIRECT_URL	../MyBlogDjango/settings.py	/^LOGIN_REDIRECT_URL = 'blog-home'$/;"	kind:variable	line:140
+LOGIN_URL	../MyBlogDjango/settings.py	/^LOGIN_URL = 'login'/;"	kind:variable	line:142
+urls.py	../MyBlogDjango/urls.py	1;"	kind:file	line:1
+urlpatterns	../MyBlogDjango/urls.py	/^urlpatterns = [$/;"	kind:variable	line:23
+wsgi.py	../MyBlogDjango/wsgi.py	1;"	kind:file	line:1
+application	../MyBlogDjango/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+__init__.py	../MyBlogDjango/__init__.py	1;"	kind:file	line:1
+admin.py	../user/admin.py	1;"	kind:file	line:1
+apps.py	../user/apps.py	1;"	kind:file	line:1
+UserConfig	../user/apps.py	/^class UserConfig(AppConfig):$/;"	kind:class	line:3
+name	../user/apps.py	/^    name = 'user'$/;"	kind:variable	line:4
+ready	../user/apps.py	/^    def ready(self):$/;"	kind:member	line:6
+forms.py	../user/forms.py	1;"	kind:file	line:1
+UserRegisterForm	../user/forms.py	/^class UserRegisterForm(UserCreationForm):$/;"	kind:class	line:7
+email	../user/forms.py	/^    email = forms.EmailField(label= 'Email', required= True)$/;"	kind:variable	line:8
+Meta	../user/forms.py	/^    class Meta:$/;"	kind:class	line:10
+model	../user/forms.py	/^        model = User$/;"	kind:variable	line:11
+fields	../user/forms.py	/^        fields = ['username','email','password1','password2']$/;"	kind:variable	line:12
+UserUpdateForm	../user/forms.py	/^class UserUpdateForm(forms.ModelForm):$/;"	kind:class	line:14
+email	../user/forms.py	/^    email = forms.EmailField(label = 'Email')$/;"	kind:variable	line:15
+Meta	../user/forms.py	/^    class Meta:$/;"	kind:class	line:16
+model	../user/forms.py	/^        model = User$/;"	kind:variable	line:17
+fields	../user/forms.py	/^        fields = ['username','email']$/;"	kind:variable	line:18
+ProfileUpdateForm	../user/forms.py	/^class ProfileUpdateForm(forms.ModelForm):$/;"	kind:class	line:20
+Meta	../user/forms.py	/^    class Meta:$/;"	kind:class	line:21
+model	../user/forms.py	/^        model = Profile$/;"	kind:variable	line:22
+fields	../user/forms.py	/^        fields = ['image']$/;"	kind:variable	line:23
+0001_initial.py	../user/migrations/0001_initial.py	1;"	kind:file	line:1
+Migration	../user/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+initial	../user/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
+dependencies	../user/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+operations	../user/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:16
+name	../user/migrations/0001_initial.py	/^            name='Profile',$/;"	kind:variable	line:18
+fields	../user/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
+__init__.py	../user/migrations/__init__.py	1;"	kind:file	line:1
+models.py	../user/models.py	1;"	kind:file	line:1
+Profile	../user/models.py	/^class Profile(models.Model):$/;"	kind:class	line:5
+user	../user/models.py	/^    user = models.OneToOneField(User, on_delete=models.CASCADE)$/;"	kind:variable	line:6
+image	../user/models.py	/^    image = models.ImageField(default = 'default.jpg', upload_to= 'profile_pics')$/;"	kind:variable	line:7
+save	../user/models.py	/^    def save(self,*args, **kwargs):$/;"	kind:member	line:9
+__str__	../user/models.py	/^    def __str__(self):$/;"	kind:member	line:20
+signals.py	../user/signals.py	1;"	kind:file	line:1
+create_profile	../user/signals.py	/^def create_profile(sender,instance,created,**kwargs):$/;"	kind:function	line:8
+save_profile	../user/signals.py	/^def save_profile(sender,instance,**kwargs):$/;"	kind:function	line:14
+tests.py	../user/tests.py	1;"	kind:file	line:1
+views.py	../user/views.py	1;"	kind:file	line:1
+register	../user/views.py	/^def register(request):$/;"	kind:function	line:8
+profile	../user/views.py	/^def profile(request):$/;"	kind:function	line:21
+changeProfile	../user/views.py	/^def changeProfile(request):$/;"	kind:function	line:26
+__init__.py	../user/__init__.py	1;"	kind:file	line:1

@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+    <title>
+      {%block title%}
+        Base Template
+      {%endblock%}
+    </title>
+    
+        <script>
+                function onAction()
+                {
+                    window.location.assign("/login")
+                }
+        </script>
+        <style>
+                .zoom1 {
+                    padding: 40px;
+                    transition: transform .4s;
+                    width: auto;
+                    height: auto;
+                    margin: 0 auto;
+                  }
+                .zoom1:hover {
+                    transform: scale(1.04); 
+                    background:#E0E0E0;
+                  }
+                  body{
+                    background-color:auto;
+                  }
+                  .zoom {
+                    padding: 40px;
+                    transition: transform .4s;
+                    width: auto;
+                    height: auto;
+                    margin: 0 auto;
+                  }
+                  .zoom:hover {
+                    transform: scale(1.02); 
+                    background:#E0E0E0;
+                  }
+                  body{
+                    background-color:auto;
+                  }            
+        </style>
+</head>
+<body>
+    <header class="site-header">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+              <div class="container">
+              <!-- Brand -->
+              <a class="navbar-brand" href="{%url 'blog-home'%}">InstaMe</a>
+            
+              <!-- Links -->
+              <ul class="navbar-nav">
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{%url 'new-post'%}">New Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{%url 'profile'%}">Profile</a>
+                </li>
+                {%endif%}
+                <!-- Dropdown -->
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  </a>
+                  <div class="dropdown-menu ">
+                      
+                    {% if user.is_authenticated %}
+                      <a class="dropdown-item text-dark" href="/admin">Admin</a>
+                      <a class="dropdown-item" href="{%url 'change-profile'%}">Settings</a>
+                      <a class="dropdown-item bg-grey" href="/logout" onclick="OnAction()">Logout</a>
+                      <a class="dropdown-item bg-grey" href="/about">About Us</a>
+                      {%else%}
+                      <a class="dropdown-item text-dark btn disabled" href="/admin">Admin
+                      </a>
+                      <a class="dropdown-item bg-grey" href="{%url 'login'%}">Login</a>
+                      <a class="dropdown-item bg-grey" href="/register">New Account!</a>
+                      <a class="dropdown-item bg-grey" href="/about">About Us</a>
+                    {%endif%}
+                  </div>
+                </li>
+              </ul>
+            </nav>
+      </div>
+        
+    </header>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8">
+                {% if messages %} 
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                    Dear <strong>{{user.username}}!, </strong>{{message}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {% endfor %} 
+                {% endif %} 
+                {% block body %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

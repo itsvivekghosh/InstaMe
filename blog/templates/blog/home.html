@@ -1,0 +1,101 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    InstaMe
+{% endblock title %}
+
+
+{% block body %}
+<p class="container text-muted text-center text-bold">InstaMe</p>
+{% for post in posts %}
+    <div class="content-section container ">
+        <div class="article-metadata">
+            <p>
+              <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
+              <a class="mr-2 text-dark" href="{%url 'user-post' post.author.username %}" style="text-decoration: none;text-decoration-color: black;" >{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}
+              </small>
+            </p>
+            
+          </div>
+        <div class="container zoom1">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a style="text-decoration: none;text-decoration-color: black;" class="text-dark" href="{%url 'post-detail' post.id %}">
+                                <img src="{{post.image.url}}" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <hr class="my-2">
+            <p class="lead article-content" style="text-align: center;">{{ post.Captions }}</p>
+            {%if post.Comment == '' %}
+                <p>No Comments</p>
+            {% else %}
+            <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <h6><a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="text-muted article-content" style="text-align: center;text-decoration: none;">
+                          View Comments</a></h6>
+                        </h4>
+                      </div>
+                      <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body mr-1"><a class="mr-1 text-muted" href="{%url 'user-post' post.author %}" style="text-decoration: none;text-decoration-color: black;">{{post.author}}:</a> {{ post.Comment }}</div>
+                      </div>
+                </div>
+              </div>
+   
+            {%endif%}
+          </div>
+    <hr class="my-4 ">
+    {% endfor %}
+    <!-- <div class="content-section container zoom1">
+            <h1 class="display-4">Hello World</h1>
+            <p class="lead">Here is the Hello World Page</p>
+            <hr class="my-2">
+            <p>Stay tuned for more updates</p>
+    </div>
+    <div class="content-section container bg-grey zoom1">
+            <h1 class="display-4">Hello World</h1>
+            <p class="lead">Here is the Hello World Page</p>
+            <hr class="my-2">
+            <p>Stay tuned for more updates</p>
+    </div>
+    
+        <article class="media content-section">
+          <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ post.Comments }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+     -->
+     <!-- {% if is_paginated %}
+
+      {% if page_obj.has_previous %}
+        <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+      {% endif %}
+
+      {% for num in page_obj.paginator.page_range %}
+        {% if page_obj.number == num %}
+          <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
+        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+          <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if page_obj.has_next %}
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+      {% endif %}
+
+    {% endif %} -->
+{% endblock body %} 
